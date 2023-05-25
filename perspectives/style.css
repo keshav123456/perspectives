@@ -1,0 +1,164 @@
+@font-face {
+    font-family: proxima-nova;
+    src: url("assets/fonts/Proxima-Nova-Font.otf");
+}
+
+body {
+    background-color: #353441;
+    font-family: proxima-nova;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: #fff
+}
+
+u {
+    color: white;
+    font-size: 15px;
+}
+
+.button {
+    background-color: rgb(224, 219, 219);
+    color: #444;
+    width: 100%;
+    margin: 3.5%;
+    border: solid;
+    outline: skyblue;
+    text-align: center;
+    font-size: 16px;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 13px;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+  
+  /* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #ebe7e7;
+}
+
+
+.editable {
+    font-family: proxima-nova;
+    resize: none;
+    padding: 1.5%;
+    background-color: rgb(224, 219, 219);
+    color: #0f1308;
+    font-size: 16px;
+    width: 100%;
+    border: 0px;
+    border-radius: 2px;
+    overflow-y: scroll;
+}
+
+.editable2 {
+    font-family: proxima-nova;
+    background-color: rgb(224, 219, 219);
+    font-size: 3.75vh;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 1.5%;
+}
+
+
+.editable:empty:before {
+    content: attr(placeholder);
+    opacity: 0.5
+}
+
+.editable::-webkit-scrollbar {
+    width: 0 !important
+}
+
+#input {
+    height: 6%;
+}
+
+#output {
+    height: 94%;
+}
+
+a {
+    text-decoration: none;
+    color: #16e16e;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.news-list {
+    margin: 1%;
+    padding: 1%;
+    background-color: rgb(224, 219, 219);
+}
+  
+.news-list p {
+font-size: 14px;
+margin: 0%;
+}
+
+.news-list ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.news-list li {
+margin-bottom: 14px;
+border-bottom: 2px solid rgb(7, 7, 7);
+}
+
+.news-list li:last-child {
+margin-bottom: 0;
+border-bottom: none;
+padding-bottom: 0;
+}
+
+.news-list h4 {
+    font-size: 18px;
+    font: outline;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+}

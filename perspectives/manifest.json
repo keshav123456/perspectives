@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Perspectives",
+    "description": "A chrome extension that lets you select any text and finds the latest perspectives in the news on that information",
+    "version": "1.0.0",
+    "host_permissions": ["http://localhost:8080/*"],
+    "permissions": ["storage", "tabs", "activeTab"],
+    "action": {},
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": ["popup.html" ],
+          "matches": ["https://*/*", "http://*/*"]
+        }
+    ]
+}
